@@ -10,7 +10,7 @@ form.addEventListener('submit', function(e) {
 btn.addEventListener('click', function() {
 
     if(!input.value.match(/^[a-öA-Ö]{3}\d{3}$/)) {
-        msg.innerHTML = 'Vänligen fyll i registreringsnummret korrekt.';
+        msg.innerHTML = '<p>Vänligen fyll i registreringsnummret korrekt.</p>';
     } else {
         window.open('https://laga.se/?carbreaker=SB' + input.value);
         input.value = '';
